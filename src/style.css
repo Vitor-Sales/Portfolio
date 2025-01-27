@@ -12,6 +12,11 @@
   --main-font: "Montserrat", serif;
 }
 
+/* ScrollReveal Library */
+html.sr .load-hidden {
+  visibility: hidden;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -72,7 +77,15 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  /* opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.8s ease, transform o.8s ease; */
 }
+
+/* .main-container section.show {
+  opacity: 1;
+  transform: translateY(0);
+} */
 
 #dev-name {
   margin-bottom: 3px;
@@ -89,4 +102,17 @@ body {
 #introduction {
   font-weight: 400;
   font-size: 4rem;
+}
+
+#projects-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px;
+}
+
+#projects-list li {
+  background-color: red;
+  height: 250px;
+  width: 45%;
 }

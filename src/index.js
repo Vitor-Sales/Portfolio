@@ -25,3 +25,24 @@ function typeEffect() {
 }
 
 typeEffect();
+
+
+// ScrollReveal Effect
+// I can use the library ScrollReveal aswell
+// const hiddenElements = document.querySelectorAll('.hidden');
+
+// const observer = new IntersectionObserver((entries) => {
+//   entries.forEach((entry) => {
+//     if (entry.isIntersecting) {
+//       entry.target.classList.add('show');
+//     }
+//   });
+// });
+
+// hiddenElements.forEach((el) => observer.observe(el));
+
+
+// ScrollReveal().reveal('.dev-container');
+// ScrollReveal().reveal('.projects-container');
+// ScrollReveal().reveal('.about-container');
+// ScrollReveal().reveal('.contact-container');
