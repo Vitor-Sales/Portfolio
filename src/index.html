@@ -13,18 +13,19 @@
     <nav class="navbar">
       <ul>
         <li><a href="#">HOME</a></li>
-        <li><a href="#">SOBRE</a></li>
-        <li><a href="#">CONTATO</a></li>
+        <li><a href="#projects-container">PROJETOS</a></li>
+        <li><a href="#about-container">SOBRE</a></li>
+        <li><a href="#contact-container">CONTATO</a></li>
       </ul>
     </nav>
   </header>
   <main class="main-container">
-    <section class="dev-container">
+    <section id="dev-container">
       <h4 id="dev-name">Vitor Sales</h4>
       <p id="profession">Desenvolvedor <span id="text-typing" ></span> </p>
       <p id="introduction">Oi, eu sou um Desenvolvedor Web apaixonado por criar soluções focadas no usuário.</p> 
     </section>
-    <section class="projects-container">
+    <section id="projects-container">
       <h2>Projetos</h2>
       <ul id="projects-list">
         <li>
@@ -54,7 +55,7 @@
       </ul>
     </section>  
     <section>
-      <div class="about-container">
+      <div id="about-container">
         <h2>Sobre</h2>
         <p class="text">Bem vindo ao meu perfil. Sou Desenvolvedor Fullstack, com foco em Frontend. Determinado a construir sites pensando na experiência do cliente: funcionais e atraentes. Tenho diversos projetos em React, utilizando Redux e ContextAPI para o controle de estados.
         </p>
@@ -85,7 +86,7 @@
       </div>
     </section>
     <section>
-      <div class="contact-container">
+      <div id="contact-container">
         <p class="main-p">Quer trocar uma idéia?</p>
         <p class="main-p">Deixe uma mensagem!</p>
         <p class="extra-p">Me fale suas idéias e veja as minhas soluções.</p>
@@ -106,8 +107,16 @@
       </div>
     </section>
   </main>
-  <footer>
-    <p>&copy; 2024 Vitor Sales</p>
+  <footer id="footer">
+    <p>&copy; 2025 Vitor Sales</p>
+    <div id="my-pages">
+      <a href="https://www.linkedin.com/in/vitor-ml-sales/" target="_blank">
+        <img src="../assets/icon-linkedin.png" alt="Minha página do LinkedIn">
+      </a>
+      <a href="https://github.com/Vitor-Sales" target="_blank">
+        <img src="../assets/icon-github.png" alt="Minha página do GitHub">
+      </a>
+    </div>
   </footer>
   <script src="index.js" ></script>
 </body>
