@@ -7,8 +7,10 @@
 
 :root {
   --primary-color: #f0f0f0;
-  --font-collor: black;
   --secondary-color: rgb(101, 101, 101);
+  --third-color: rgba(255, 255, 255, 0.505);
+  --shadow-color: rgba(0, 0, 0, 0.44);
+  --font-collor: black;
   --main-font: "Montserrat", serif;
 }
 
@@ -138,6 +140,64 @@ body {
   border-radius: 5px;
   box-shadow: 2px 2px 5px black;
 }
+
+.about-container {
+  background-color: var(--third-color);
+  /* border: 1px solid black; */
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px var(--shadow-color);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.about-container h2 {
+  text-indent: 20px;
+}
+
+.about-container > p {
+  text-indent: 20px;
+}
+
+.more-text {
+  display: none;
+}
+
+.read-more-btn {
+  background-color:var(--primary-color);
+  color: black;
+  font-size: 1rem;
+  font-weight: 500;
+  border: 1px solid black;
+  padding: 5px 10px;
+  margin: 0 auto;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.5s ease;
+  transition: border 0.5s ease;
+}
+
+.read-more-btn:hover {
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid transparent;
+}
+
+.about-container > div {
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.about-container > div > div {
+  /* border: 1px solid black;
+  border-radius: 5px;
+  background-color: var(--primary-color); */
+  padding: 5px 10px;
+}
+
 
 
 /* Mudanças para dispositivos com menos 768px de largura */

@@ -46,3 +46,28 @@ typeEffect();
 // ScrollReveal().reveal('.projects-container');
 // ScrollReveal().reveal('.about-container');
 // ScrollReveal().reveal('.contact-container');
+
+
+
+// Read More Effect
+
+const hiddenTexts = document.querySelectorAll('.more-text');
+const readMoreBtn = document.querySelector('.read-more-btn');
+
+console.log(hiddenTexts);
+
+
+readMoreBtn.addEventListener('click', () => {
+
+  if (hiddenTexts[0].style.display == 'none') {
+    for (let i = 0; i < hiddenTexts.length; i++) {
+      hiddenTexts[i].style.display = 'inline';
+    }
+    readMoreBtn.textContent = 'Leia menos';
+  } else {
+    for (let i = 0; i < hiddenTexts.length; i++) {
+      hiddenTexts[i].style.display = 'none';
+    }
+    readMoreBtn.textContent = 'Leia mais';
+  }
+})
