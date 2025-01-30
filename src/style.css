@@ -9,6 +9,7 @@
   --primary-color: #f0f0f0;
   --secondary-color: rgb(101, 101, 101);
   --third-color: rgba(255, 255, 255, 0.505);
+  --border-color: rgb(210, 210, 210);
   --shadow-color: rgba(0, 0, 0, 0.44);
   --font-collor: black;
   --main-font: "Montserrat", serif;
@@ -141,9 +142,8 @@ body {
   box-shadow: 2px 2px 5px black;
 }
 
-.about-container {
+.about-container, .contact-container {
   background-color: var(--third-color);
-  /* border: 1px solid black; */
   padding: 10px;
   border-radius: 5px;
   box-shadow: 2px 2px 5px var(--shadow-color);
@@ -167,9 +167,9 @@ body {
 .read-more-btn {
   background-color:var(--primary-color);
   color: black;
-  font-size: 1rem;
-  font-weight: 500;
-  border: 1px solid black;
+  font-size: .7rem;
+  font-weight: 600;
+  border: 1px solid var(--border-color);
   padding: 5px 10px;
   margin: 0 auto;
   cursor: pointer;
@@ -191,11 +191,62 @@ body {
   margin-top: 20px;
 }
 
+.contact-container > div {
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+  text-align: center;
+  margin-top: 20px;
+}
+
 .about-container > div > div {
   /* border: 1px solid black;
   border-radius: 5px;
   background-color: var(--primary-color); */
   padding: 5px 10px;
+}
+
+.main-p {
+  font-size: 1.6rem;
+  font-size: 1.6rem;
+}
+
+.extra-p {
+  color: var(--secondary-color);
+  font-size: .9rem;
+}
+
+#contact-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+#contact-form div {
+  flex: 1 1 calc(50% - 20px);
+}
+
+#contact-form label {
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: .8rem;
+}
+
+#contact-form input {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid var(--border-color);
+}
+
+#contact-form textarea {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid var(--border-color);
+}
+
+.group-form {
+  display: flex;
+  flex-direction: column;
 }
 
 

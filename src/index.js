@@ -63,11 +63,11 @@ readMoreBtn.addEventListener('click', () => {
     for (let i = 0; i < hiddenTexts.length; i++) {
       hiddenTexts[i].style.display = 'inline';
     }
-    readMoreBtn.textContent = 'Leia menos';
+    readMoreBtn.textContent = 'LEIA MENOS';
   } else {
     for (let i = 0; i < hiddenTexts.length; i++) {
       hiddenTexts[i].style.display = 'none';
     }
-    readMoreBtn.textContent = 'Leia mais';
+    readMoreBtn.textContent = 'LEIA MAIS';
   }
 })
